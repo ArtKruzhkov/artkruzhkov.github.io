@@ -1,0 +1,565 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 573px);
+    padding-right: calc(50% - 573px);
+}
+
+body {
+    background-color: #020A18;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    margin-bottom: 160px;
+}
+
+.container {
+    max-width: 1146px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.menuLink {
+    color: var(--ffffff, #FFF);
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 40px 16px;
+}
+
+.menuLink:hover {
+    color: #3A68B8;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mainLeft {
+    width: 53%;
+}
+
+
+.subtitle {
+    color: var(--3-a-68-b-8, #3A68B8);
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.maintitle {
+    color: var(--ffffff, #FFF);
+    font-family: "Open Sans";
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+
+.mainDisctiption {
+    width: 36vw;
+    color: var(--ffffff, #FFF);
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    opacity: 0.7;
+    margin-bottom: 50px;
+}
+
+.mainButtons {
+    display: flex;
+    width: 408px;
+    justify-content: space-between;
+}
+
+.mainLink {
+    border-radius: 5px;
+    background: var(--3-a-68-b-8, #3A68B8);
+    padding: 1rem 2rem;
+    color: var(--ffffff, #FFF);
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.fa-play {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.logos {
+    margin-top: 197px;
+}
+
+.contentInfo {
+    margin-top: 256px;
+}
+
+.infoRight {
+    width: 42%;
+}
+
+.infoTitle {
+    margin-bottom: 30px;
+    color: var(--ffffff, #FFF);
+    font-family: "Open Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.infoText {
+    color: var(--ffffff, #FFF);
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    opacity: 0.7;
+    margin-bottom: 50px;
+}
+
+.infoLink {
+    display: inline-block;
+    border-radius: 5px;
+    background: var(--3-a-68-b-8, #3A68B8);
+    padding: 1rem 2rem;
+    color: var(--ffffff, #FFF);
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.infoWrap {
+    margin-bottom: 264px;
+}
+
+.contentNet {
+    display: grid;
+    grid-template-columns: repeat(3, 362px);
+    gap: 32px;
+    margin-bottom: 243px;
+}
+
+.contentNetItem {
+    border-radius: 10px;
+    background: #132035;
+    padding: 30px;
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+}
+
+.itemBig {
+    border-radius: 10px;
+    background: #132035;
+    /* grid-column: 1 / 3;
+    grid-row: 2 / 4; */
+    grid-column: span 2;
+    grid-row: span 2;
+    padding: 30px 30px 144px 30px;
+    display: grid;
+    justify-items: center;
+    gap: 60px;
+}
+
+.contentNetTitle {
+    color: var(--ffffff, #FFF);
+    font-family: "Open Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.contentNetTitleBig {
+    color: var(--ffffff, #FFF);
+    font-family: "Open Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.contentText {
+    color: var(--ffffff, #FFF);
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.contentImg {
+    width: 98px;
+}
+
+.contentImgBig {
+    width: 306px;
+}
+
+.bottomTitle {
+    color: var(--ffffff, #FFF);
+    font-family: "Open Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+
+.bottomText {
+    width: 460px;
+    color: var(--ffffff, #FFF);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+.bottomInfo {
+    margin-bottom: 221px;
+}
+
+.bottomInfoLeft {
+    width: 48%;
+}
+
+.footer {
+    background-color: #09101E;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.footerTitle {
+    color: var(--ffffff, #FFF);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.companyInfo {
+    color: var(--ffffff, #FFF);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 24px;
+}
+
+.companyInfo:first-of-type {
+    margin-top: 33px;
+}
+
+.aboutStoreText {
+    color: var(--ffffff, #FFF);
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 100;
+    line-height: normal;
+    opacity: 0.6;
+    margin-top: 33px;
+}
+
+.infoImg {
+    margin-right: 10px;
+}
+
+.companySocial {
+    margin-right: 24px;
+}
+
+.footerInfoItem {
+    width: 31.5%;
+}
+
+
+@media(max-width:1024px) {
+    .center {
+        padding-left: calc(50% - 376px);
+        padding-right: calc(50% - 376px);
+    }
+
+    .flex {
+        justify-content: center;
+    }
+
+    .mainLeft {
+        margin-bottom: 128px;
+        width: 604px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .maintitle {
+        font-size: 48px;
+    }
+
+    .mainDisctiption {
+        width: 558px;
+    }
+
+    .logos {
+        gap: 32px;
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main {
+        padding-bottom: 120px;
+    }
+
+    .contentInfo {
+        margin-top: 157px;
+    }
+
+    .infoRight {
+        width: 484px;
+    }
+
+    .infoTitle {
+        margin-top: 68px;
+    }
+
+    .infoText {
+        width: 460px;
+    }
+
+    .contentNet {
+        grid-template-columns: repeat(1, 362px);
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .itemBig {
+        height: 388px;
+        overflow: scroll;
+        grid-column: span 1;
+        grid-row: span 1;
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .contentImgBig {
+        width: 98px;
+    }
+
+    .bottomInfo {
+        gap: 64px;
+    }
+
+    .bottomInfoLeft {
+        width: 548px;
+    }
+
+    .bottomText:last-of-type {
+        margin-bottom: 0px;
+    }
+
+    .footerInfo {
+        gap: 30px;
+        justify-content: flex-start;
+    }
+
+    .footerInfoItem {
+        width: 361px;
+    }
+
+    .aboutStoreText {
+        width: 261px;
+    }
+}
+
+@media(max-width:767px) {
+    .center {
+        padding-left: calc(50% - 172px);
+        padding-right: calc(50% - 172px);
+    }
+
+    .main {
+        padding-bottom: 108px;
+    }
+
+    .header {
+        margin-bottom: 64px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .menuLink {
+        font-size: 14px;
+        padding: 22px 8px;
+    }
+
+    .mainLeft {
+        width: 100%;
+    }
+
+    .subtitle {
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .maintitle {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 64px;
+    }
+
+    .mainDisctiption {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 39px;
+    }
+
+    .mainButtons {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .contentInfo {
+        margin-top: 96px;
+        margin-bottom: 96px;
+    }
+
+    .infoWrap {
+        margin-bottom: 96px;
+    }
+
+    .infoRight {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .infoTitle {
+        font-size: 24px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .infoText {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .contentNet {
+        margin-bottom: 96px;
+    }
+
+    .bottomInfo {
+        gap: 32px;
+        margin-bottom: 0;
+    }
+
+    .bottomInfoLeft {
+        width: 100%;
+    }
+
+    .bottomTitle {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .bottomText {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .footer {
+        padding-top: 113px;
+        padding-bottom: 65px;
+    }
+
+    .footerInfo {
+        gap: 32px;
+    }
+
+    .infoImg {
+        width: 13px;
+    }
+
+    .companySocial {
+        width: 18px;
+    }
+
+    .footerTitle {
+        text-align: center;
+    }
+
+    .footerInfoItem {
+        width: 100%;
+    }
+
+    .companyInfoSite {
+        text-align: center;
+    }
+
+    .companyInfoSocial {
+        text-align: center;
+    }
+
+    .aboutStoreText {
+        text-align: center;
+        width: 100%;
+        margin-top: 32px;
+    }
+
+    .companySocial:nth-child(3) {
+        margin-right: 0;
+    }
+}
