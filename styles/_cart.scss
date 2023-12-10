@@ -1,0 +1,185 @@
+.cart {
+    padding-top: 96px;
+    padding-bottom: 128px;
+    display: flex;
+    justify-content: space-between;
+
+
+    &-left-item {
+        margin-bottom: 40px;
+        display: flex;
+        box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+    }
+
+    &-item-info {
+        padding: 22px 97px 62px 31px;
+        box-sizing: border-box;
+        width: 390px;
+    }
+
+    &-item-title {
+        color: #222;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 42px;
+        width: 211px;
+    }
+
+    &-item-discription {
+        color: #575757;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 6px;
+
+        &-span-q {
+            margin-left: 24px;
+            padding: 0 16px;
+            border: 1px solid black;
+        }
+
+        &-span-p {
+            color: $colorTextPink;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+
+    &-left-buttons-wrap {
+        padding-top: 32px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-left-button {
+        display: block;
+        padding: 16px 40px;
+        border: 1px solid #A4A4A4;
+        color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+        &:hover {
+            box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+            font-weight: 400;
+        }
+    }
+
+    &-ship {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        gap: 20px;
+        align-items: flex-start;
+        margin-bottom: 57px;
+        margin-top: 13px;
+
+        &-title {
+            color: #222;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &-input {
+            color: #222;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 17px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        &-input:first-of-type::placeholder {
+            color: #B1B1B1;
+        }
+
+        &-input::placeholder {
+            color: #222;
+            font-family: Lato;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &-link {
+            margin-top: 13px;
+            display: block;
+            padding: 10px 14px;
+            color: #4A4A4A;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            border: 1px solid #A4A4A4;
+
+            &:hover {
+                box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+                font-weight: 400;
+            }
+        }
+    }
+
+    &-checkout {
+        padding: 39px 42px 42px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: #F5F3F3;
+    }
+
+    &-total-wrap {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 12px;
+        color: #4A4A4A;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        &:nth-of-type(2) {
+            margin-bottom: 21px;
+        }
+    }
+
+    &-grandtotal-text,
+    .cart-grandtotal-price {
+        color: #222;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &-grandtotal-price {
+        color: $colorSelectSite !important;
+        font-weight: 700 !important;
+    }
+
+    &-checkout-link {
+        margin-top: 17px;
+        padding: 15px 42px;
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        background-color: $colorSelectSite;
+        transition: all 0.3s;
+
+        &:hover {
+            box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+            font-weight: 500;
+        }
+    }
+}
