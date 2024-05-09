@@ -1,0 +1,406 @@
+@use 'sass:math'
+@use 'sass:color'
+
+@import fonts
+@import libs
+@import vars
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: rgba(0,0,0,.25)
+	border-color: rgba(0,0,0,.25)
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+	&.ishome
+		.site-header
+			min-height: 700px
+			height: 100vh
+			background-color: #151515
+			.top-line
+				display: flex
+				justify-content: space-between
+				align-items: center
+				padding-top: 40px
+				position: absolute
+				width: 100%
+				z-index: 1
+
+.h1, .h2, .h3, .h4, .h5, .h6
+	line-height: 1.4
+	text-transform: uppercase
+
+.button
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: $accent
+	padding: 16px 45px
+	font-size: 13px
+	text-transform: uppercase
+	font-weight: 600
+	letter-spacing: 3px
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	cursor: pointer
+	&::after
+		transition: background-color .2s ease
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: darken($accent, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($accent, 5%)
+		&::after
+			opacity: .32
+	&.button-white
+		background-color: #fff
+		color: #444
+		&::after
+			background-color: rgba(#000, .6)
+		&:hover
+			&::after
+				background-color: rgba(#000, .2)
+		&:active
+			&::after
+				background-color: rgba(#000, .4)
+.logo
+	height: fit-content
+	margin-left: 6vw
+	img
+		width: 125px
+		height: auto
+
+.phone
+	display: flex
+	align-items: center
+	gap: 3px
+	margin-right: 6vw
+	font-size: 22px
+	white-space: nowrap
+	font-family: 'firasans', sans-serif
+	p
+		margin: 0
+
+.fa
+	color: $iconColor
+	font-size: 30px
+
+.hamburger
+	position: absolute
+	right: 2px
+	top: 45px
+	padding: 0 1vw
+	.hamburger-box
+		width: 34px
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+	border-radius: 0
+	height: 2px
+	width: 34px
+	background-color: #fff
+
+.mm-navbar
+	height: auto
+	position: relative
+	border: none
+	.mm-title
+		padding: 0
+		img
+			width: 128px
+			height: auto
+			margin: 10px 0 30px
+
+.mm-listview
+	>li
+		> a
+			display: flex
+			transition: color .25s ease
+			padding-left: 14%
+			padding-right: 14%
+			&:hover
+				color: $accent
+				&::before
+					color: $accent
+			&::before
+				content: '\f219'
+				font-family: fontawesome
+				margin-right: 8px
+				text-decoration: none
+				font-size: 12px
+				color: #fff
+				transition: color .25s ease
+		&.active
+			&>a
+				color: $accent
+
+html.mm-opened
+	overflow-y: scroll
+.mm-panels>.mm-panel.mm-hasnavbar
+	right: -18px
+.mm-listview>li:not(.mm-divider):after
+	display: none
+.mm-menu.mm-theme-black .mm-listview>li.mm-selected>a:not(.mm-next), .mm-menu.mm-theme-black .mm-listview>li.mm-selected>span
+	background-color: transparent
+	color: $accent
+.mm-panels>.mm-panel:after, .mm-panels>.mm-panel:before
+	height: 0
+.mm-panels>.mm-panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
+	margin-top: 0
+
+section, header
+	position: relative
+	background-size: cover
+	background-position: 60% center
+
+section
+	background-color: #fff
+
+.site-header
+	color: #fff
+
+.header-flex
+	display: flex
+	position: relative
+	height: 100%
+	top: 0
+.flex-center
+	margin: auto
+
+.header-composition
+	text-align: center
+	position: relative
+	p
+		margin-top: 50px
+		margin-bottom: 30px
+		strong
+			font-weight: 600
+
+.welcome-wrap
+	p
+		font-size: 14px
+		text-transform: uppercase
+		margin: 0
+		display: flex
+		align-items: center
+		justify-content: center
+		white-space: nowrap
+		margin-bottom: -10px
+		span
+			margin: 0 10px
+		&::before, &::after
+			content: ''
+			height: 1px
+			width: 100%
+			position: relative
+			background-color: #fff
+			display: inline-block
+	.h1
+		white-space: nowrap
+		font-weight: 100
+		font-size: 66px
+		margin: 0
+		line-height: 1.6
+		border-bottom: 1px solid #fff
+	strong
+		display: flex
+		justify-content: center
+		align-items: center
+		gap: 10px
+		font-weight: 600
+		text-transform: uppercase
+		font-size: 17px
+		margin-top: 25px
+		.fa-star
+			font-size: 12px
+
+.header-social
+	position: absolute
+	display: flex
+	top: 0
+	right: 0
+	height: 100%
+	border-left: rgba(#fff, .1) 2px solid
+	padding: 0 1vw
+
+.socials
+	margin: auto
+	ul
+		display: flex
+		flex-direction: column
+		gap: 18px
+	ul, li
+		margin: 0
+		padding: 0
+		list-style-type: none
+	a
+		text-decoration: none
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 38px
+		height: 38px
+		background-color: rgba(#fff, .2)
+		color: #2c2c2c
+		font-size: 17px
+		border-radius: 10em
+		transition: background-color .25s ease
+		&:hover
+			background-color: rgba(#fff, .4)
+		.fa
+			color: #2c2c2c
+			font-size: inherit
+
+.header-contacts
+	position: absolute
+	width: 100%
+	bottom: 0
+	left: 0
+	padding: 1vw 0
+	border-top: rgba(#fff, .15) 2px solid
+	background-color: rgba(#151515, .15)
+	.col-md-4
+		display: flex
+		align-items: center
+		gap: 8px
+		&:nth-child(2)
+			justify-content: center
+			font-family: 'firasans', sans-serif
+		&:nth-child(3)
+			justify-content: flex-end
+		p
+			margin: 0
+		.fa
+			font-size: 16px
+
+$colors: $blue, $red, $accent
+@for $i from 1 through length($colors)
+	.carousel-services .owl-item:nth-child(#{length($colors)}n+#{$i})
+		background-color: nth($colors, $i)
+
+.carousel-services
+	background-color: $dark
+	&-item
+		color: #fff
+		font-size: 18px
+		font-weight: 300
+		position: relative
+		display: flex
+		flex-direction: column-reverse
+		&:hover
+			.carousel-services-image
+				opacity: 1
+	.owl-item
+		&:nth-child(2n+2)
+			.carousel-services-item
+				flex-direction: column
+	&-content
+		display: flex
+		position: relative
+		justify-content: center
+		padding: 10%
+		.carousel-logo
+			text-align: center
+			img
+				width: 100px
+				height: auto
+				display: inline-block
+	&-composition
+		text-align: center
+		width: 100%
+		.h3
+			font-weight: 800
+			font-size: 28px
+			margin-top: 5px
+			margin-bottom: 20px
+			span
+				font-weight: 300
+				font-size: 18px
+				display: block
+	&-list
+		margin: 0
+		padding: 0
+		list-style-type: none
+		margin-bottom: 25px
+		li
+			padding: 9px
+			border-bottom: 1px solid rgba(#000, .12)
+			&:last-child
+				border-bottom: none
+			strong
+				font-family: 'firasans', sans-serif
+				color: #4a4a4a
+			.fa-rub
+				font-size: 14px
+				color: #4a4a4a
+	&-image
+		background-size: cover
+		background-position: center
+		opacity: .8
+		transition: opacity .5s ease
+	.owl-nav
+		position: absolute
+		top: 0
+		width: 100%
+		> div
+			position: absolute
+			text-align: center
+			width: 64px
+			height: 64px
+			background-color: #fff
+			color: $dark
+			.fa
+				color: $dark
+				font-size: 26px
+				line-height: 64px
+		.owl-prev
+			left: 0
+		.owl-next
+			right: 0
+.owl-carousel
+	.owl-item
+		backface-visibility: inherit
+// Всегда в конце
+@import media
