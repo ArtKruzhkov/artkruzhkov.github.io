@@ -1,0 +1,193 @@
+@import vars
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.welcome-wrap
+		.h1
+			font-size: 55px
+	.header-contacts
+		font-size: 13px
+		.row
+			padding: 0 40px
+	.carousel-services-item
+		flex-direction: column
+	.section
+		&-info
+			.row
+				display: flex
+				align-items: center
+				.h2
+					margin-top: 30px
+		&-apply
+			background-position: -55%
+
+	.footer-social
+		.socials
+			ul
+				justify-content: flex-start
+				gap: 12px
+
+	.footer-menu
+		align-items: flex-start
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.logo
+		margin-left: 7vw
+	.phone
+		font-size: 21px
+		margin-right: 7vw
+	.welcome-wrap
+		p
+			font-size: 11px !important
+			margin: 0 !important
+		.h1
+			font-size: 40px
+		strong
+			margin-top: 20px
+
+	.header-contacts
+		font-size: 9px
+	.header-composition
+		p
+			margin-bottom: 25px
+			margin-top: 40px
+	.section
+		&-info
+			padding: 7% 0
+			.row
+				display: block
+				text-align: center
+				.h2
+					margin-top: 0
+					font-size: 28px
+				.info-text
+					font-size: 16px
+	.section-apply
+		background-size: cover
+		background-position: 22%
+		&::before
+			width: 100%
+		.form-callback
+			padding: 12% 0
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.phone
+		margin-right: 11vw
+		font-size: 19px
+
+	.logo
+		margin-left: 11vw
+
+	.header-contacts
+		.row
+			padding: 0 60px
+		.col-md-4
+			padding: 0
+		.col-md-4:nth-child(3)
+			justify-content: start
+			margin-top: 3px
+
+	.header-composition
+		.h1
+			font-size: 34px
+		p
+			font-size: 14px
+	.welcome-wrap
+		p
+			font-size: 9px !important
+
+	.quotes
+		display: none
+
+	.section-partners
+		.h2
+			margin: 0
+		.owl-nav
+			> div
+				&.owl-prev
+					left: 0
+				&.owl-next
+					right: 0
+
+	.footer-menu
+		font-size: 14px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.top-line
+		flex-direction: column
+		gap: 3px
+		.logo
+			margin-left: 0
+		.phone
+			margin-right: 0
+	.header-composition
+		.h1
+			font-size: 22px
+		p
+			font-size: 12px
+			margin-bottom: 20px
+			margin-top: 30px
+	.welcome-wrap
+		p
+			font-size: 6px !important
+		strong
+			margin-top: 15px
+			font-size: 14px
+	.header-contacts
+		.row
+			padding: 0 40px
+	.button
+		font-size: 8px
+		padding: 12px 40px
+	.section
+		&-info
+			.row
+				.h2
+					font-size: 24px
+				.info-text
+					font-size: 14px
+	.fotorama__nav-wrap
+		display: none
+
+	.footer-menu
+		font-size: 11px
+		ul
+			li
+				a
+					padding-left: 20px
+					&::before
+						font-size: 10px
+
+	.footer-social
+		.socials
+			ul
+				gap: 8px
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
